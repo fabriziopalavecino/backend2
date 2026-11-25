@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { getSessions } from '../controllers/session.controller.js';
+import { register } from '../controllers/session.controller.js';
 
 const router = Router();
 
-router.get('/', getSessions);
+router.post('/register', register);
 
 export default router;
